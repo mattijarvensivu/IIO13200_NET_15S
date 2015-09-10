@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Tehtava2Lotto.Properties
+namespace Tehtävä2.Properties
 {
 
 

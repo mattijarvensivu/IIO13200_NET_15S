@@ -1,12 +1,34 @@
-﻿<Window x:Class="IIO13200_15S.MainWindow"
+﻿<Window x:Class="Tehtävä1.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:IIO13200_15S"
+        xmlns:local="clr-namespace:Tehtävä1"
         mc:Ignorable="d"
-        Title="Tehtävä 1: K-S Ikkunat Oy" Height="350" Width="525" FontSize="18">
+        Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <TextBox x:Name="IkkunanLeveys" HorizontalAlignment="Center" Height="20" Margin="394,66,43,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Text="1200" TextChanged="IkkunanLeveys_TextChanged"/>
+        <TextBox x:Name="IkkunanKorkeus" HorizontalAlignment="Center" Height="20" Margin="394,98,43,0" TextWrapping="Wrap" Text="900" VerticalAlignment="Top" Width="80" TextChanged="IkkunanKorkeus_TextChanged"/>
+        <TextBox x:Name="KarminLeveys" HorizontalAlignment="Left" Height="20" Margin="394,131,0,0" TextWrapping="Wrap" Text="45" VerticalAlignment="Top" Width="80" TextChanged="KarminLeveys_TextChanged"/>
+        <Button x:Name="Laske" Content="Laske pinta-ala ja piiri" HorizontalAlignment="Left" Margin="333,163,0,0" VerticalAlignment="Top" Width="141" Height="26" Click="Laske_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                    <GradientStop Color="#FF403B3B" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Label x:Name="Teksti1" Content="Ikkunan Leveys(L):" HorizontalAlignment="Left" Margin="264,64,0,0" VerticalAlignment="Top" Height="27" Width="111"/>
+        <Label x:Name="Teksi2" Content="Ikkunan korkeus(H):" HorizontalAlignment="Left" Margin="264,98,0,0" VerticalAlignment="Top" Width="111" Height="25"/>
+        <Label x:Name="teksti3" Content="Karmipuun leveys(W):" HorizontalAlignment="Left" Margin="264,128,0,0" VerticalAlignment="Top" Width="125"/>
+        <TextBox x:Name="PintaAla" HorizontalAlignment="Left" Height="23" Margin="339,209,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="PintaAla_TextChanged"/>
+        <TextBox x:Name="KarminPiiri" HorizontalAlignment="Left" Height="23" Margin="339,245,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="KarminPiiri_TextChanged"/>
+        <TextBox x:Name="KarminPinta" HorizontalAlignment="Left" Height="23" Margin="339,281,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="KarminLeveys1_TextChanged"/>
+        <Label x:Name="Teksti4" Content="Ikkunan pinta-ala:" HorizontalAlignment="Left" Margin="195,206,0,0" VerticalAlignment="Top" Width="125"/>
+        <Label x:Name="Teksti5" Content="Karmin piiri:" HorizontalAlignment="Left" Margin="195,243,0,0" VerticalAlignment="Top" Width="125"/>
+        <Label x:Name="Teksti6" Content="Karmin pinta-ala(W):" HorizontalAlignment="Left" Margin="195,281,0,0" VerticalAlignment="Top" Width="135"/>
+
     </Grid>
 </Window>
