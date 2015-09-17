@@ -26,3 +26,17 @@ C:\Matin\Koulu\IIO13200_NET_15S\IIO13200_NET_15S\Tehtava3\obj\Debug\MainWindow.b
 C:\Matin\Koulu\IIO13200_NET_15S\IIO13200_NET_15S\Tehtava3\obj\Debug\Tehtava3.g.resources
 C:\Matin\Koulu\IIO13200_NET_15S\IIO13200_NET_15S\Tehtava3\obj\Debug\Tehtava3.Properties.Resources.resources
 C:\Matin\Koulu\IIO13200_NET_15S\IIO13200_NET_15S\Tehtava3\obj\Debug\Tehtava3.csproj.GenerateResource.Cache
+Z:\NET\IIO13200_NET_15S\Tehtava3\bin\Debug\Tehtava3.exe.config
+Z:\NET\IIO13200_NET_15S\Tehtava3\obj\Debug\Tehtava3.exe
+Z:\NET\IIO13200_NET_15S\Tehtava3\obj\Debug\Tehtava3.pdb
+Z:\NET\IIO13200_NET_15S\Tehtava3\bin\Debug\Tehtava3.exe
+Z:\NET\IIO13200_NET_15S\Tehtava3\bin\Debug\Tehtava3.pdb
+Z:\NET\IIO13200_NET_15S\Tehtava3\obj\Debug\Tehtava3.csprojResolveAssemblyReference.cache
+Z:\NET\IIO13200_NET_15S\Tehtava3\obj\Debug\MainWindow.g.cs
+Z:\NET\IIO13200_NET_15S\Tehtava3\obj\Debug\App.g.cs
+Z:\NET\IIO13200_NET_15S\Tehtava3\obj\Debug\Tehtava3_MarkupCompile.cache
+Z:\NET\IIO13200_NET_15S\Tehtava3\obj\Debug\Tehtava3_MarkupCompile.lref
+Z:\NET\IIO13200_NET_15S\Tehtava3\obj\Debug\MainWindow.baml
+Z:\NET\IIO13200_NET_15S\Tehtava3\obj\Debug\Tehtava3.g.resources
+Z:\NET\IIO13200_NET_15S\Tehtava3\obj\Debug\Tehtava3.Properties.Resources.resources
+Z:\NET\IIO13200_NET_15S\Tehtava3\obj\Debug\Tehtava3.csproj.GenerateResource.Cache

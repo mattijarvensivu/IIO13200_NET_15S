@@ -120,7 +120,7 @@ namespace Tehtava3
 
         private void Poista_Click(object sender, RoutedEventArgs e)
         {
-            if (Pelaajat.Count > 0) //Tarkistus että ei voi poistaa tyhjää
+            if (Pelaajat.Count > 0 && tallennetutpelaajat.SelectedIndex >= 0) //Tarkistus että ei voi poistaa tyhjää
             {
                 Pelaajat.RemoveAt(tallennetutpelaajat.SelectedIndex);//Poistetaan pelaaja tietystä indexistä
                 tallennetutpelaajat.Items.Clear(); //tyhjennetään kenttä
@@ -137,8 +137,8 @@ namespace Tehtava3
                 transfer.Text = "";
             }
             else {
-                System.Windows.MessageBox.Show("Pelajalista on jo tyhjä");
-                Statustext.Text = "Pelaajalista on tyhjä";
+                System.Windows.MessageBox.Show("Pelajalista on jo tyhjä tai et ole valinnut pelaajaa");
+                Statustext.Text = "Pelaajalista on tyhjä tai et ole valinnut pelaajaa";
             }
         }
 
