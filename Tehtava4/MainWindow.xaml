@@ -1,0 +1,20 @@
+﻿<Window x:Class="Tehtava4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tehtava4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+
+
+        <Button x:Name="buttonxml" Content="Hae viinit" HorizontalAlignment="Left" Margin="116,140,0,0" VerticalAlignment="Top" Width="146"  Click="buttonxml_Click" Height="34"/>
+        <ComboBox x:Name="viinimaat" HorizontalAlignment="Left" Margin="116,71,0,0" VerticalAlignment="Top" Width="146" Height="34">
+           
+            
+        </ComboBox>
+        <Label x:Name="label" Content="Viinit maan mukaan" HorizontalAlignment="Left" Margin="116,29,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+       
+    </Grid>
+</Window>

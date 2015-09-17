@@ -1,0 +1,93 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Data;
+using System.Drawing;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+using System.Xml;
+using System.Xml.Linq;
+using System.ComponentModel;
+
+namespace Tehtava4
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            loadCombo();
+        }
+
+        private void buttonxml_Click(object sender, RoutedEventArgs e)
+        {
+            string filu = @"http://student.labranet.jamk.fi/~salesa/iio11300/mat/Viinit1.xml";
+            DataSet ds = new DataSet();
+            DataView dv = new DataView();
+
+
+
+
+
+
+
+
+
+
+
+            XDocument xmlDoc = XDocument.Load("http://student.labranet.jamk.fi/~salesa/iio11300/mat/Viinit1.xml");
+
+            var Viinikellari = from wine in xmlDoc.Descendants("nimi")
+                          where wine.Element("maa").Value == viinimaat.SelectedItem.ToString()
+                          select new
+                          {
+                              Name = wine.Element("nimi").Value,
+                              City = wine.Element("pisteet").Value,
+                              Age = wine.Element("maa").Value,
+                          };
+            
+            filteratut.Text = "";
+            foreach (var person in persons)
+            {
+                filteratut.Text = richTextBox1.Text + "Nimi: " + person.Name + "\n";
+                richTextBox1.Text = richTextBox1.Text + "pisteet: " + person.City + "\n";
+                richTextBox1.Text = richTextBox1.Text + "maat: " + person.Age + "\n\n";
+            }
+
+            if (richTextBox1.Text == "")
+                richTextBox1.Text = "No Results.";
+
+            Viinikellari1 vk = new Viinikellari1();
+            
+            vk.Käyttäjä = "Matti Järvensivu";
+            vk.ShowDialog();
+            
+
+        }
+       
+        private void loadCombo()
+        {
+            viinimaat.Items.Clear();
+
+            XmlDocument doc = new XmlDocument();
+            doc.Load("http://student.labranet.jamk.fi/~salesa/iio11300/mat/Viinit1.xml");
+            XmlNodeList nodeList = doc.SelectNodes("viinikellari/wine");
+
+            foreach (XmlNode node in nodeList)
+                if (!viinimaat.Items.Contains(node.SelectSingleNode("maa").InnerText))
+                    viinimaat.Items.Add(node.SelectSingleNode("maa").InnerText);
+        }
+    }
+}
