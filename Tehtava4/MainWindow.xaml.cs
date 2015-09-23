@@ -27,47 +27,68 @@ namespace Tehtava4
     {
         public MainWindow()
         {
+
+           
+
             InitializeComponent();
             loadCombo();
         }
+       
 
         private void buttonxml_Click(object sender, RoutedEventArgs e)
         {
             //string filu = @"http://student.labranet.jamk.fi/~salesa/iio11300/mat/Viinit1.xml";
-             //DataSet ds = new DataSet();
+            //DataSet ds = new DataSet();
             //DataView dv = new DataView();
 
             //DataTable dt = new DataTable();
             //ds.ReadXml(filu);
             //dt = ds.Tables[0];
             //dt.DefaultView();
-           // dv = DtdProcessing.DefaultView;
+            // dv = DtdProcessing.DefaultView;
             //dbwines.ItemSource = dv;
             //maat = new List<string>();
-        
-          
-
-
-
-
-
-
-
-
 
 
 
             XDocument xmlDoc = XDocument.Load("http://student.labranet.jamk.fi/~salesa/iio11300/mat/Viinit1.xml");
 
-            var Viinikellari = from wine in xmlDoc.Descendants("nimi")
-                          where wine.Element("maa").Value == viinimaat.SelectedItem.ToString()
+            var viinit = from viini in xmlDoc.Descendants("wine")
+                          where viini.Element("maa").Value == viinimaat.SelectedItem.ToString()
                           select new
                           {
-                              Name = wine.Element("nimi").Value,
-                              City = wine.Element("pisteet").Value,
-                              Age = wine.Element("maa").Value,
+                              Nimi = viini.Element("nimi").Value,
+                              Maa = viini.Element("maa").Value,
+                              Arvio = viini.Element("arvio").Value,
                           };
-          
+            listView.Items.Clear();
+            listView.Items.Add("");
+            foreach (var viini in viinit)
+            {
+                listView.Items.Add("Name: " + viini.Nimi + "\n");
+                listView.Items.Add("maa: " + viini.Maa + "\n");
+                listView.Items.Add("Arvio: " + viini.Arvio + "\n");
+            }
+
+           
+
+
+
+
+
+
+
+            /*  XDocument xmlDoc = XDocument.Load("http://student.labranet.jamk.fi/~salesa/iio11300/mat/Viinit1.xml");
+
+              var Viinikellari = from wine in xmlDoc.Descendants("nimi")
+                            where wine.Element("maa").Value == viinimaat.SelectedItem.ToString()
+                            select new
+                            {
+                                Name = wine.Element("nimi").Value,
+                                City = wine.Element("pisteet").Value,
+                                Age = wine.Element("maa").Value,
+                            };
+            */
 
             Viinikellari1 vk = new Viinikellari1();
             
@@ -92,6 +113,8 @@ namespace Tehtava4
             viinimaat.Items.Add(node.SelectSingleNode("maa").InnerText);
            
         }
+
+      
     }
 
 
