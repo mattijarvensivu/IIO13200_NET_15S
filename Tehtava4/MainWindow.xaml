@@ -10,7 +10,7 @@
 
 
         <Button x:Name="buttonxml" Content="Hae viinit" HorizontalAlignment="Left" Margin="53,140,0,0" VerticalAlignment="Top" Width="146"  Click="buttonxml_Click" Height="34"/>
-        <ComboBox x:Name="viinimaat" HorizontalAlignment="Left" Margin="53,65,0,0" VerticalAlignment="Top" Width="146" Height="34" SelectionChanged="viinimaat_SelectionChanged">
+        <ComboBox x:Name="viinimaat" HorizontalAlignment="Left" Margin="53,65,0,0" VerticalAlignment="Top" Width="146" Height="34">
 
 
         </ComboBox>
