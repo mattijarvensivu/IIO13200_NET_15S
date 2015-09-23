@@ -33,9 +33,19 @@ namespace Tehtava4
 
         private void buttonxml_Click(object sender, RoutedEventArgs e)
         {
-            string filu = @"http://student.labranet.jamk.fi/~salesa/iio11300/mat/Viinit1.xml";
-            DataSet ds = new DataSet();
-            DataView dv = new DataView();
+            //string filu = @"http://student.labranet.jamk.fi/~salesa/iio11300/mat/Viinit1.xml";
+             //DataSet ds = new DataSet();
+            //DataView dv = new DataView();
+
+            //DataTable dt = new DataTable();
+            //ds.ReadXml(filu);
+            //dt = ds.Tables[0];
+            //dt.DefaultView();
+           // dv = DtdProcessing.DefaultView;
+            //dbwines.ItemSource = dv;
+            //maat = new List<string>();
+        
+          
 
 
 
@@ -57,17 +67,7 @@ namespace Tehtava4
                               City = wine.Element("pisteet").Value,
                               Age = wine.Element("maa").Value,
                           };
-            
-            filteratut.Text = "";
-            foreach (var person in persons)
-            {
-                filteratut.Text = richTextBox1.Text + "Nimi: " + person.Name + "\n";
-                richTextBox1.Text = richTextBox1.Text + "pisteet: " + person.City + "\n";
-                richTextBox1.Text = richTextBox1.Text + "maat: " + person.Age + "\n\n";
-            }
-
-            if (richTextBox1.Text == "")
-                richTextBox1.Text = "No Results.";
+          
 
             Viinikellari1 vk = new Viinikellari1();
             
@@ -82,12 +82,18 @@ namespace Tehtava4
             viinimaat.Items.Clear();
 
             XmlDocument doc = new XmlDocument();
+       
             doc.Load("http://student.labranet.jamk.fi/~salesa/iio11300/mat/Viinit1.xml");
-            XmlNodeList nodeList = doc.SelectNodes("viinikellari/wine");
-
+             XmlNodeList nodeList = doc.SelectNodes("viinikellari/wine");
+           
             foreach (XmlNode node in nodeList)
-                if (!viinimaat.Items.Contains(node.SelectSingleNode("maa").InnerText))
-                    viinimaat.Items.Add(node.SelectSingleNode("maa").InnerText);
+              if (!viinimaat.Items.Contains(node.SelectSingleNode("maa").InnerText))
+
+            viinimaat.Items.Add(node.SelectSingleNode("maa").InnerText);
+           
         }
     }
+
+
+
 }
