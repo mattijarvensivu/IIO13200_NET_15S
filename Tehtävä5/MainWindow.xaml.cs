@@ -24,5 +24,10 @@ namespace Tehtävä5
         {
             InitializeComponent();
         }
+
+        private void btnGetDataTable_Click(object sender, RoutedEventArgs e)
+        {
+            dbData.DataContext = JAMK.IT.DBDemoxOy.GetDataReal();
+        }
     }
 }

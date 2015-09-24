@@ -14,6 +14,7 @@ namespace ADOdatareader
         {
             //GetData_DataReader();
             GetData_Datatable();
+           
         }
 
         static void GetData_Datatable()
@@ -23,7 +24,7 @@ namespace ADOdatareader
             {
 
                 //haetaan datatablen avulla
-                DataTable dt = GetDataSimple();
+                DataTable dt = GetDataReal();
                 string rivi = "";
                 //Loopitetaan datatablen rivit läpi
                 foreach(DataRow dr in dt.Rows)
@@ -58,7 +59,41 @@ namespace ADOdatareader
 
             return dt;
         }
-            static void GetData_DataReader()
+
+        static DataTable GetDataReal()
+        {
+            string sql = "";
+            sql = "SELECT asioid, lastname, firstname, date FROM lasnaolot WHERE asioid= 'H4102'";
+            string connStr = @"Data source=eight.labranet.jamk.fi;initial catalog=DemoxOy; user=koodari;password=koodari13";
+            try
+            {
+
+                using (SqlConnection conn = new SqlConnection(connStr))
+                {
+                    //avataan Yhteys
+                    conn.Open();
+                    //luodaan komento = command-olio
+                    using (SqlCommand cmd = new SqlCommand(sql, conn))
+                    {
+                        SqlDataAdapter da = new SqlDataAdapter(cmd);
+                        DataSet ds = new DataSet();
+                        da.Fill(ds, "lasnaolot");
+
+                        return ds.Tables["lasnaolot"];
+
+                    }
+
+
+
+                }
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+        static void GetData_DataReader()
                 {
 
             
