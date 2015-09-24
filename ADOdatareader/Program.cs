@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -11,6 +12,56 @@ namespace ADOdatareader
     {
         static void Main(string[] args)
         {
+            //GetData_DataReader();
+            GetData_Datatable();
+        }
+
+        static void GetData_Datatable()
+        {
+            //Ui kerron datan esittämistä varter
+            try
+            {
+
+                //haetaan datatablen avulla
+                DataTable dt = GetDataSimple();
+                string rivi = "";
+                //Loopitetaan datatablen rivit läpi
+                foreach(DataRow dr in dt.Rows)
+                {
+                    rivi = "";
+                    foreach (DataColumn dc in dt.Columns)
+                    {
+                        rivi += dr[dc].ToString(); 
+
+                    }
+                    Console.WriteLine(rivi);
+                }
+                
+           
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+
+            }
+
+        }
+
+
+        static DataTable GetDataSimple()
+        {
+            DataTable dt = new DataTable();
+            dt.Columns.Add("Firstname", typeof(string));
+            dt.Columns.Add("Lastname", typeof(string));
+            dt.Rows.Add("Kalle", " Isokalliio");
+            dt.Rows.Add("Pekka", " Kuusisto");
+
+            return dt;
+        }
+            static void GetData_DataReader()
+                {
+
+            
 
             try {
                 string sql ="";
