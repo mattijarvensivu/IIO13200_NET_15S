@@ -1,0 +1,6 @@
+Z:\NET\IIO13200_NET_15S\ADOdatareader\bin\Debug\ADOdatareader.exe.config
+Z:\NET\IIO13200_NET_15S\ADOdatareader\bin\Debug\ADOdatareader.exe
+Z:\NET\IIO13200_NET_15S\ADOdatareader\bin\Debug\ADOdatareader.pdb
+Z:\NET\IIO13200_NET_15S\ADOdatareader\obj\Debug\ADOdatareader.csprojResolveAssemblyReference.cache
+Z:\NET\IIO13200_NET_15S\ADOdatareader\obj\Debug\ADOdatareader.exe
+Z:\NET\IIO13200_NET_15S\ADOdatareader\obj\Debug\ADOdatareader.pdb
