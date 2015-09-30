@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Configuration;
 
 namespace JAMK.IT
 {
@@ -21,22 +22,26 @@ namespace JAMK.IT
             return dt;
         }
 
-         public static DataTable GetDataReal()
+         public static DataTable GetDataReal(string nimi)
         {
-            string sql = "";
-            sql = "SELECT asioid, lastname, firstname, date FROM lasnaolot";
-            string connStr = @"Data source=eight.labranet.jamk.fi;initial catalog=DemoxOy; user=koodari;password=koodari13";
+            
+
+            
+            string connStr = System.Configuration.ConfigurationManager.ConnectionStrings["Test"].ConnectionString;
             try
             {
 
-                using (SqlConnection conn = new SqlConnection(connStr))
+                using (SqlConnection connection = new SqlConnection(connStr))
                 {
-                    //avataan Yhteys
-                    conn.Open();
-                    //luodaan komento = command-olio
-                    using (SqlCommand cmd = new SqlCommand(sql, conn))
+                    connection.Open();
+                
+                    using (SqlCommand command = new SqlCommand(
+                    "SELECT asioid, lastname, firstname, date FROM lasnaolot WHERE firstname = @nimi", connection))
                     {
-                        SqlDataAdapter da = new SqlDataAdapter(cmd);
+                       
+                        command.Parameters.AddWithValue("@nimi", nimi);
+                       
+                        SqlDataAdapter da = new SqlDataAdapter(command);
                         DataSet ds = new DataSet();
                         da.Fill(ds, "lasnaolot");
 

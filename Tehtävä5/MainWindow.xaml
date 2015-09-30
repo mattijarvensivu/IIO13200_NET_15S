@@ -12,6 +12,7 @@
             <RowDefinition Height="19*"/>
         </Grid.RowDefinitions>
         <Button x:Name="btnGetDataTable" Content="Hae läsnäolot (DataTable)" Height="24" Margin="10 ,10 0,0" VerticalAlignment="Top" Click="btnGetDataTable_Click" />
-        <DataGrid x:Name="dbData" Grid.RowSpan="2" Margin="0,49,0,0" ItemsSource="{Binding}"></DataGrid>
+        <DataGrid x:Name="dbData" Grid.RowSpan="2" Margin="0,118,0,0" ItemsSource="{Binding}"></DataGrid>
+        <TextBox x:Name="filter" HorizontalAlignment="Left" Height="36" Margin="10,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="241"/>
     </Grid>
 </Window>

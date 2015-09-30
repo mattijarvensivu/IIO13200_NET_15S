@@ -27,7 +27,8 @@ namespace Tehtävä5
 
         private void btnGetDataTable_Click(object sender, RoutedEventArgs e)
         {
-            dbData.DataContext = JAMK.IT.DBDemoxOy.GetDataReal();
+            string nimi = filter.Text.ToString();
+            dbData.DataContext = JAMK.IT.DBDemoxOy.GetDataReal(nimi);
         }
     }
 }
