@@ -1,0 +1,39 @@
+﻿<Window x:Class="Tehtävä8.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tehtävä8"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid Background="Snow">
+        <Label x:Name="label" Content="Anna Palaute" HorizontalAlignment="Left" Margin="151,0,0,0" VerticalAlignment="Top" Width="252" FontSize="21" FontWeight="Bold" FontStyle="Italic" />
+        <TextBox x:Name="Pvmtext" HorizontalAlignment="Left" Height="23" Margin="24,75,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Nimitext" HorizontalAlignment="Left" Height="23" Margin="24,151,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label1" Content="Pvm:" HorizontalAlignment="Left" Margin="24,44,0,0" VerticalAlignment="Top" Width="58" FontWeight="Bold"/>
+        <Label x:Name="label2" Content="Nimi:" HorizontalAlignment="Left" Margin="24,120,0,0" VerticalAlignment="Top" Width="58"  FontWeight="Bold" />
+        <Label x:Name="label3" Content="Olen oppinut:" HorizontalAlignment="Left" Margin="164,38,0,0" VerticalAlignment="Top" Width="120"  FontWeight="Bold" />
+        <Label x:Name="label4" Content="Haluan oppia:" HorizontalAlignment="Left" Margin="164,132,0,0" VerticalAlignment="Top" Width="120"  FontWeight="Bold" />
+        <Label x:Name="label5" Content="Hyvää:" HorizontalAlignment="Left" Margin="325,31,0,0" VerticalAlignment="Top" Width="120"  FontWeight="Bold" />
+        <Label x:Name="label6" Content="Parannettavaa:" HorizontalAlignment="Left" Margin="325,120,0,0" VerticalAlignment="Top" Width="120"  FontWeight="Bold" />
+
+        <RichTextBox x:Name="haluanoppia" HorizontalAlignment="Left" Height="40" Margin="161,167,0,0" VerticalAlignment="Top" Width="120" BorderThickness="2">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text=""/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Button x:Name="Lähetä" Content="Lähetä palaute" HorizontalAlignment="Left" Margin="0,290,0,0" VerticalAlignment="Top" Width="123" Height="30" Click="Lähetä_Click"/>
+        <Button x:Name="Hae" Content="Hae palautteet" HorizontalAlignment="Left" Margin="123,290,0,0" VerticalAlignment="Top" Width="123" Height="30" Click="Hae_Click"/>
+        <Label x:Name="muutalabel" HorizontalAlignment="Left" Margin="335,208,0,0" VerticalAlignment="Top" Width="68"  FontWeight="Bold" />
+        <TextBox x:Name="Olenoppinut" HorizontalAlignment="Left" Height="63" Margin="164,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136"/>
+        <TextBox x:Name="hyvaa" HorizontalAlignment="Left" Height="63" Margin="325,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136"/>
+        <TextBox x:Name="parannettavaa" HorizontalAlignment="Left" Height="63" Margin="325,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136"/>
+        <Label x:Name="muutatext" Content="Muuta" HorizontalAlignment="Left" Margin="341,218,0,0" VerticalAlignment="Top" Width="120"  FontWeight="Bold" />
+        <TextBox x:Name="muuta" HorizontalAlignment="Left" Height="63" Margin="325,244,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136"/>
+
+
+
+    </Grid>
+</Window>
