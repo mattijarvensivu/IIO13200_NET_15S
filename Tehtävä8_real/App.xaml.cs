@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace Tehtävä8
+namespace Tehtävä8_real
 {
     /// <summary>
     /// Interaction logic for App.xaml

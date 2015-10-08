@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Tehtävä8.Properties {
+namespace Tehtävä8_real.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -26,12 +26,12 @@ namespace Tehtävä8.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("\\\\ghost.labranet.jamk.fi\\TEMP\\Palautteet.xml")]
-        public string Palautteet2 {
+        public string Palautteet {
             get {
-                return ((string)(this["Palautteet2"]));
+                return ((string)(this["Palautteet"]));
             }
             set {
-                this["Palautteet2"] = value;
+                this["Palautteet"] = value;
             }
         }
     }

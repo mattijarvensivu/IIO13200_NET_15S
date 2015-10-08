@@ -1,7 +1,7 @@
-﻿<Application x:Class="Tehtävä8.App"
+﻿<Application x:Class="Tehtävä8_real.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:Tehtävä8"
+             xmlns:local="clr-namespace:Tehtävä8_real"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
          
