@@ -22,10 +22,11 @@ namespace Tehtävä2
 
 
 
-
-
+    //    !!!! HUOM !!!!!! ----------------------
+    // ------------------------------------
 
     // Olisi Kannattanut Käyttää Listview:tä. en ala sitä nyt muuttamaan
+    // tai käyttää iteminä niin olisi voinut enemmän rivejä saanut näkyviin (scrollbar)
 
 
 
