@@ -13,9 +13,16 @@
             <ComboBoxItem Content="Eurojackpot" HorizontalAlignment="Left" Width="118"/>
         </ComboBox>
         <TextBox x:Name="Rivit" HorizontalAlignment="Left" Height="23" Margin="82,28,0,0" TextWrapping="Wrap" Text="Rivit" VerticalAlignment="Top" Width="120" />
-        <TextBlock x:Name="ValmiitRivit" HorizontalAlignment="Left" Margin="45,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="194" Width="338" Background="Wheat"/>
+        <TextBlock x:Name="ValmiitRivita" HorizontalAlignment="Left" Margin="420,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="22" Width="34" Background="Wheat"/>
         <Label x:Name="label" Content="Arvotut rivit:" HorizontalAlignment="Left" Margin="56,62,0,0" VerticalAlignment="Top" Width="139"/>
         <Button x:Name="ArvontaNappi" Content="Arvo" HorizontalAlignment="Left" Margin="236,64,0,0" VerticalAlignment="Top" Width="75" Click="ArvontaNappi_Click"/>
+        <ListView x:Name="ValmiitRivit" HorizontalAlignment="Left" Height="172" Margin="10,123,0,0" VerticalAlignment="Top" Width="451">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
 
     </Grid>
 </Window>

@@ -14,6 +14,24 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Tehtävä2
+
+
+
+
+
+
+
+
+
+
+
+    // Olisi Kannattanut Käyttää Listview:tä. en ala sitä nyt muuttamaan
+
+//Paljon ohjelmat mennyt sekaisin kun commitissa tiedostoja jäänyt väliin. Ja vahingossa poistin kotikoneelta homman. Koodia kyllä näkee mutta ohjelmia ei voi ajaa hirveästi
+
+
+
+
 {
     
     /// <summary>
@@ -42,8 +60,8 @@ namespace Tehtävä2
             {
                 Lotto rivi = new Lotto(39,7);
                 int[][] Rivit = new int[Rivimäärä][];
-                ValmiitRivit.Text += "Lotto numerot:";
-                ValmiitRivit.Text += Environment.NewLine;
+                ValmiitRivit.Items.Add("Lotto numerot:"); 
+                //ValmiitRivit.Text += Environment.NewLine;
                 for (int i=0; i<Rivimäärä; i++)
                 { 
                    
@@ -55,10 +73,11 @@ namespace Tehtävä2
                         {
                     for (int j = 0; j < 7; j++)
                     {
-                        ValmiitRivit.Text += Rivit[a][j] + ",".ToString();
+                        ValmiitRivit.Items.Add(Rivit[a][j] + ",".ToString());
+                        
                         
                     }
-                    ValmiitRivit.Text += Environment.NewLine;
+                    //ValmiitRivit.Text += Environment.NewLine;
                 }
 
                 
@@ -68,8 +87,8 @@ namespace Tehtävä2
             {
                 Lotto rivi = new Lotto(48, 6);
                 int[][] Rivit = new int[Rivimäärä][];
-                ValmiitRivit.Text += "Viking lottonumerot:";
-                ValmiitRivit.Text += Environment.NewLine;
+                ValmiitRivit.Items.Add("Viking lottonumerot:");
+                //ValmiitRivit.Text += Environment.NewLine;
 
                 for (int i = 0; i < Rivimäärä; i++)
             {
@@ -82,10 +101,10 @@ namespace Tehtävä2
             {
                 for (int j = 0; j < 6; j++)
                 {
-                    ValmiitRivit.Text += Rivit[a][j] + ",".ToString();
+                    ValmiitRivit.Items.Add(Rivit[a][j] + ",".ToString());
 
                 }
-                ValmiitRivit.Text += Environment.NewLine;
+                //ValmiitRivit.Text += Environment.NewLine;
             }
 
 
@@ -96,8 +115,8 @@ namespace Tehtävä2
                 Lotto TähtiNumerot = new Lotto(10,2);
                 int[][] Rivit = new int[Rivimäärä][];
                 int[][] TähtiRivit = new int[Rivimäärä][];
-                ValmiitRivit.Text += "Eurojackpot numerot:";
-                ValmiitRivit.Text += Environment.NewLine;
+                ValmiitRivit.Items.Add("Eurojackpot numerot:"); 
+                //ValmiitRivit.Text += Environment.NewLine;
                 for (int i = 0; i < Rivimäärä; i++)
                 {
 
@@ -109,17 +128,17 @@ namespace Tehtävä2
                 {
                     for (int j = 0; j < 5; j++)
                     {
-                        ValmiitRivit.Text += Rivit[a][j] + ",".ToString();
+                        ValmiitRivit.Items.Add(Rivit[a][j] + ",".ToString());
 
                       
                     }
-                    ValmiitRivit.Text += " Tähtinumerot: ";
+                    ValmiitRivit.Items.Add(" Tähtinumerot: ");
                     for (int k = 0; k < 2; k++)
                     {
                         
-                        ValmiitRivit.Text += TähtiRivit[a][k] + ",".ToString();
+                        ValmiitRivit.Items.Add(TähtiRivit[a][k] + ",".ToString());
                     }
-                    ValmiitRivit.Text += Environment.NewLine;
+                    //ValmiitRivit.Text += Environment.NewLine;
                    
                 }
 
