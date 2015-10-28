@@ -1,0 +1,168 @@
+<?xml version ="1.0" encoding="UTF-8"?>
+    <levyt>
+
+    <levy>
+       <nimi>Kunnes siitä tuli totta</nimi>
+        <ISBN>Apulanta2015</ISBN>
+        <hinta>20,00</hinta>
+        <biisit>
+            <biisi>Sensaatio</biisi>
+            <biisi>Sun pitäis luovuttaa</biisi>
+            <biisi>Sun kohdalla</biisi>
+            <biisi>Palava pensas</biisi>
+            <biisi>Valot Pimeyksien reunalla</biisi>
+            <biisi>Styraki</biisi>
+            <biisi>Miinus nolla</biisi>
+            <biisi>Viime vuoden marraskuuhun</biisi>
+            <biisi>Käärmeöljy</biisi>
+            <biisi>Loppunäytös</biisi>
+        </biisit>
+    </levy>
+
+    <levy>
+
+        <nimi>Revenge Of The A.L. People</nimi>
+        <ISBN>Apulanta2014</ISBN>
+        <hinta>18,00</hinta>
+        <biisit>
+            <biisi>Kristalliprinsessa</biisi>
+            <biisi>Nähdän lauantaina</biisi>
+            <biisi>Ei oo mukavaa</biisi>
+            <biisi>Mun täytyy mennä</biisi>
+            <biisi>Kelpaanhan rakkaani?</biisi>
+            <biisi>Aurinkoon</biisi>
+            <biisi>Päivästä toiseen</biisi>
+            <biisi>Itkeväthän enkelitkin</biisi>
+            <biisi>Miks ei uni tuu?</biisi>
+            <biisi>Kolme vuotta(mennään naimisiin)</biisi>
+            <biisi>Valokuva</biisi>
+            <biisi>Ilona</biisi>
+            <biisi>Silmämuna</biisi>
+        </biisit>
+    </levy>
+
+    <levy>
+        <nimi>Kaikki kolmesta pahasta</nimi>
+        <ISBN>Apulanta2012</ISBN>
+        <hinta>17,00</hinta>
+        <biisit>
+            <biisi>Zombeja!</biisi>
+            <biisi>Aggressio</biisi>
+            <biisi>Kahdesta pahasta molemmat</biisi>
+            <biisi>Yksinkertainen</biisi>
+            <biisi>Toinen henki</biisi>
+            <biisi>Ihme</biisi>
+            <biisi>Paaso</biisi>
+            <biisi>Pihtiote</biisi>
+            <biisi>Nimet ja päivämäärät</biisi>
+            <biisi>Paju</biisi>
+            <biisi>Yhdestoista marssi</biisi>
+
+        </biisit>
+    </levy>
+
+    <levy>
+        <nimi>Kuutio (kuinka aurinko voitettiin)</nimi>
+        <ISBN>Apulanta2008</ISBN>
+        <hinta>16,50</hinta>
+        <biisit>
+            <biisi>Kaikki sun pelkosi</biisi>
+            <biisi>Vauriot</biisi>
+            <biisi>Ravistettava ennen käyttöä</biisi>
+            <biisi>Airut</biisi>
+            <biisi>Elämänviiva</biisi>
+            <biisi>Pakkomielle</biisi>
+            <biisi>Freestylemeikit</biisi>
+            <biisi>Puolet</biisi>
+            <biisi>Kuution palaset</biisi>
+            <biisi>Kirous</biisi>
+
+        </biisit>
+    </levy>
+    <nimi>Eikä vielä ole edes ilta</nimi>
+    <ISBN>Apulanta2007</ISBN>
+    <hinta>8,99</hinta>
+    <biisit>
+
+        <biisi>Viisaus ei asu meissä</biisi>
+        <biisi>Karman laina</biisi>
+        <biisi>Kaivo</biisi>
+        <biisi>Näytelmä</biisi>
+        <biisi>Eikä vielä ole edes ilta</biisi>
+        <biisi>Trauma</biisi>
+        <biisi>Koneeseen kadonnut</biisi>
+        <biisi>Väistö</biisi>
+        <biisi>Nimesä alle</biisi>
+        <biisi>Ylijäämävalumaa</biisi>
+    </biisit>
+
+    <levy>
+        <nimi>Kiila</nimi>
+        <ISBN>Apulanta2005</ISBN>
+        <hinta>9,50</hinta>
+        <biisit>
+            <biisi>Syöpä</biisi>
+            <biisi>Pala siitä</biisi>
+            <biisi>Pahempi toistaan</biisi>
+            <biisi>Valon juuri</biisi>
+            <biisi>Armo</biisi>
+            <biisi>Usko</biisi>
+            <biisi>Kuollakseen elossa</biisi>
+            <biisi>Routa</biisi>
+            <biisi>Laululintu</biisi>
+            <biisi>Kaukaa lähelle</biisi>
+        </biisit>
+    </levy>
+    <levy>
+        <nimi>Hiekka</nimi>
+        <ISBN>Apulanta2002</ISBN>
+        <hinta>6,50</hinta>
+        <biisit>
+            <biisi>Hiekka</biisi>
+            <biisi>Hippo</biisi>
+            <biisi>jumala</biisi>
+            <biisi>Faarao</biisi>
+            <biisi>Valas</biisi>
+            <biisi>Hetki</biisi>
+            <biisi>Saasta</biisi>
+            <biisi>Onttosydän</biisi>
+            <biisi>Lihaviihde</biisi>
+            <biisi>Kolmiolääke</biisi>
+        </biisit>
+    </levy>
+    <levy>
+        <nimi>Heinola 10</nimi>
+        <ISBN>Apulanta2001</ISBN>
+        <hinta>4,20</hinta>
+        <biisit>
+            <biisi>Reunalla</biisi>
+            <biisi>Timantit</biisi>
+            <biisi>Ruhtinaat</biisi>
+            <biisi>Muistijäljet</biisi>
+            <biisi>Käärmeet</biisi>
+            <biisi>Viivakoodit</biisi>
+            <biisi>Kirveltäjät</biisi>
+            <biisi>Kadut</biisi>
+            <biisi>Tunnit</biisi>
+            <biisi>Kaksoishuiput</biisi>
+        </biisit>
+    </levy>
+    <levy>
+        <nimi>Plastik</nimi>
+        <ISBN>Apulanta2000</ISBN>
+        <hinta>3,50</hinta>
+        <biisit>
+            <biisi>Tervetuloa</biisi>
+            <biisi>Käännä se pois</biisi>
+            <biisi>Turvallista matkaa helvettiin</biisi>
+            <biisi>Odotus</biisi>
+            <biisi>Ei yhtään todistajaa</biisi>
+            <biisi>Maanantai</biisi>
+            <biisi>Terä</biisi>
+            <biisi>Noidanmetsästäjä</biisi>
+            <biisi>Tyhjää ikkunassa</biisi>
+            <biisi>Maailmanpyörä</biisi>
+        </biisit>
+    </levy>
+
+</levyt>
