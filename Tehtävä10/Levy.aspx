@@ -11,15 +11,19 @@
     <div>
     
     </div>
-        <asp:DataList ID="DataList" runat="server" DataSourceID="XmlDataSource1">
+        <asp:DataList ID="DataList" runat="server" DataSourceID="XmlDataSource1" BackColor="LightGoldenrodYellow" BorderColor="Tan" BorderWidth="1px" CellPadding="2" ForeColor="Black">
+            <AlternatingItemStyle BackColor="PaleGoldenrod" />
+            <FooterStyle BackColor="Tan" />
+            <HeaderStyle BackColor="Tan" Font-Bold="True" />
+            <SelectedItemStyle BackColor="DarkSlateBlue" ForeColor="GhostWhite" />
         </asp:DataList>
-        <asp:XmlDataSource ID="XmlDataSource1" runat="server" DataFile="~/levyt.xml" XPath="//levyt/levy"></asp:XmlDataSource>
-     <asp:ListBox ID="ListBox" runat="server" Height="140px" Width="199px"></asp:ListBox>
-        
+        <asp:XmlDataSource ID="XmlDataSource1" runat="server" DataFile="~/levyt.xml" XPath="//levyt/levy/@ISBN"></asp:XmlDataSource>
+     </form>   
+   
 </body>
 </html>
    
-    </form>
+    
     
         
 

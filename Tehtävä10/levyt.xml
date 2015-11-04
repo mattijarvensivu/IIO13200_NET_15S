@@ -1,11 +1,7 @@
 <?xml version ="1.0" encoding="UTF-8"?>
     <levyt>
-
-    <levy>
-       <nimi>Kunnes siitä tuli totta</nimi>
-        <ISBN>Apulanta2015</ISBN>
-        <hinta>20,00</hinta>
-        <biisit>
+      <levy ISBN="Apulanta2015" nimi="Kunnes siitä tuli totta" hinta="20.00">
+<biisit>
             <biisi>Sensaatio</biisi>
             <biisi>Sun pitäis luovuttaa</biisi>
             <biisi>Sun kohdalla</biisi>
@@ -17,14 +13,10 @@
             <biisi>Käärmeöljy</biisi>
             <biisi>Loppunäytös</biisi>
         </biisit>
-    </levy>
-
-    <levy>
-
-        <nimi>Revenge Of The A.L. People</nimi>
-        <ISBN>Apulanta2014</ISBN>
-        <hinta>18,00</hinta>
-        <biisit>
+      </levy>
+      <levy ISBN="Apulanta2014" nimi="Revenge Of The A.L. People" hinta="18.00">
+<biisi>Sensaatio</biisi>
+                <biisit>
             <biisi>Kristalliprinsessa</biisi>
             <biisi>Nähdän lauantaina</biisi>
             <biisi>Ei oo mukavaa</biisi>
@@ -39,13 +31,9 @@
             <biisi>Ilona</biisi>
             <biisi>Silmämuna</biisi>
         </biisit>
-    </levy>
-
-    <levy>
-        <nimi>Kaikki kolmesta pahasta</nimi>
-        <ISBN>Apulanta2012</ISBN>
-        <hinta>17,00</hinta>
-        <biisit>
+      </levy>
+        <levy ISBN="Apulanta2012" nimi="Kaikki kolmesta pahasta" hinta="17.00">
+          <biisit>
             <biisi>Zombeja!</biisi>
             <biisi>Aggressio</biisi>
             <biisi>Kahdesta pahasta molemmat</biisi>
@@ -59,13 +47,9 @@
             <biisi>Yhdestoista marssi</biisi>
 
         </biisit>
-    </levy>
-
-    <levy>
-        <nimi>Kuutio (kuinka aurinko voitettiin)</nimi>
-        <ISBN>Apulanta2008</ISBN>
-        <hinta>16,50</hinta>
-        <biisit>
+          </levy>  
+          <levy ISBN="Apulanta2008" nimi="Kuutio (kuinka aurinko voitettiin)" hinta="16.50">
+            <biisit>
             <biisi>Kaikki sun pelkosi</biisi>
             <biisi>Vauriot</biisi>
             <biisi>Ravistettava ennen käyttöä</biisi>
@@ -78,46 +62,24 @@
             <biisi>Kirous</biisi>
 
         </biisit>
-    </levy>
-    <nimi>Eikä vielä ole edes ilta</nimi>
-    <ISBN>Apulanta2007</ISBN>
-    <hinta>8,99</hinta>
-    <biisit>
-
-        <biisi>Viisaus ei asu meissä</biisi>
-        <biisi>Karman laina</biisi>
-        <biisi>Kaivo</biisi>
-        <biisi>Näytelmä</biisi>
-        <biisi>Eikä vielä ole edes ilta</biisi>
-        <biisi>Trauma</biisi>
-        <biisi>Koneeseen kadonnut</biisi>
-        <biisi>Väistö</biisi>
-        <biisi>Nimesä alle</biisi>
-        <biisi>Ylijäämävalumaa</biisi>
-    </biisit>
-
-    <levy>
-        <nimi>Kiila</nimi>
-        <ISBN>Apulanta2005</ISBN>
-        <hinta>9,50</hinta>
+            </levy>
+      <levy ISBN="Apulanta2005" nimi="Kiila" hinta="6.99">
         <biisit>
-            <biisi>Syöpä</biisi>
-            <biisi>Pala siitä</biisi>
-            <biisi>Pahempi toistaan</biisi>
-            <biisi>Valon juuri</biisi>
-            <biisi>Armo</biisi>
-            <biisi>Usko</biisi>
-            <biisi>Kuollakseen elossa</biisi>
-            <biisi>Routa</biisi>
-            <biisi>Laululintu</biisi>
-            <biisi>Kaukaa lähelle</biisi>
+          <biisi>Viisaus ei asu meissä</biisi>
+          <biisi>Karman laina</biisi>
+          <biisi>Kaivo</biisi>
+          <biisi>Näytelmä</biisi>
+          <biisi>Eikä vielä ole edes ilta</biisi>
+          <biisi>Trauma</biisi>
+          <biisi>Koneeseen kadonnut</biisi>
+          <biisi>Väistö</biisi>
+          <biisi>Nimesä alle</biisi>
+          <biisi>Ylijäämävalumaa</biisi>
         </biisit>
-    </levy>
-    <levy>
-        <nimi>Hiekka</nimi>
-        <ISBN>Apulanta2002</ISBN>
-        <hinta>6,50</hinta>
-        <biisit>
+      </levy>
+         
+                <levy ISBN="Apulanta2002" nimi="Hiekka" hinta="10.00">
+                   <biisit>
             <biisi>Hiekka</biisi>
             <biisi>Hippo</biisi>
             <biisi>jumala</biisi>
@@ -129,12 +91,10 @@
             <biisi>Lihaviihde</biisi>
             <biisi>Kolmiolääke</biisi>
         </biisit>
-    </levy>
-    <levy>
-        <nimi>Heinola 10</nimi>
-        <ISBN>Apulanta2001</ISBN>
-        <hinta>4,20</hinta>
-        <biisit>
+                  </levy>
+      
+                <levy ISBN="Apulanta2001" nimi="Heinola 10" hinta="4.20">
+                   <biisit>
             <biisi>Reunalla</biisi>
             <biisi>Timantit</biisi>
             <biisi>Ruhtinaat</biisi>
@@ -146,12 +106,10 @@
             <biisi>Tunnit</biisi>
             <biisi>Kaksoishuiput</biisi>
         </biisit>
-    </levy>
-    <levy>
-        <nimi>Plastik</nimi>
-        <ISBN>Apulanta2000</ISBN>
-        <hinta>3,50</hinta>
-        <biisit>
+                  </levy>
+      
+                <levy ISBN="Apulanta2000" nimi="Plastik" hinta="3.50">
+                  <biisit>
             <biisi>Tervetuloa</biisi>
             <biisi>Käännä se pois</biisi>
             <biisi>Turvallista matkaa helvettiin</biisi>
@@ -163,6 +121,6 @@
             <biisi>Tyhjää ikkunassa</biisi>
             <biisi>Maailmanpyörä</biisi>
         </biisit>
-    </levy>
+                  </levy>
 
 </levyt>

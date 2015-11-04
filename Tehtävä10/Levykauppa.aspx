@@ -26,18 +26,18 @@
             <HeaderStyle BackColor="Tan" Font-Bold="True" />
             <ItemTemplate>
                 <div style="float:left">
-                <img style="width:304px;height:228px" alt="kuva" src='Images/<%# XPath("ISBN") %>.jpg'" />
+                <img style="width:304px;height:228px" alt="kuva" src='Images/<%# XPath("@ISBN") %>.jpg'" />
                     </div>
                 <div style="float:left";>
-               <b> <%# XPath("nimi") %></b>
+               <b> <%# XPath("@nimi") %></b>
                 <br />
                     <br />
                     <br />
-              <a href="Levy.aspx/?name=<%# XPath("ISBN") %>"><b>  <%# XPath("ISBN") %></b></a>
+              <a href="Levy.aspx/?name=<%# XPath("@ISBN") %>"><b>  <%# XPath("@ISBN") %></b></a>
                 <br />
                     <br />
                     <br />
-                <b><%# XPath("hinta") %>€</b>
+                <b><%# XPath("@hinta") %>€</b>
                 <br />
                     <br />
                     <br />
